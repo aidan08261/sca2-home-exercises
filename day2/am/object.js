@@ -3,5 +3,11 @@
 // HINT: recursion may help here
 
 const hasFalsyValue = obj => {
-  return false;
+  let check = false
+  for( let key in obj){
+    if(obj[key] == true){
+      check = true;
+    }
+  }
+  return check;
 };

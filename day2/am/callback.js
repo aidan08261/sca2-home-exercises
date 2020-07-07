@@ -15,10 +15,17 @@ const getUser = callback => {
     guess: Math.round(Math.random())
   }
   // TODO: Run the callback function here with the appropriate parameters
+  callback(user.guess, handleWin)
 }
 
 const handleWin = didWin => {
   // TODO
+  if(didWin){
+    console.log("Win")
+  } else {
+    console.log("Lose")
+  }
 }
 
 // TODO: run getUser
+getUser(coinToss)

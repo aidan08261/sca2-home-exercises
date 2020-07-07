@@ -5,6 +5,7 @@ const arr = [7, 8, 15, 14, 13, 70, 44, 35, 88, 77, false, "7", "hi", null]
 
 const multOf7 = el => {
   // TODO: Check if el is a multOf7
+  return el % 7 == 0 && typeof el == "number"
 }
 
 // Challenge: Implement the filter method below!
